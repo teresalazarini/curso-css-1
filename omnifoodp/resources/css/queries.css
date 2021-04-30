@@ -1,0 +1,219 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+/* 1024px a 1200px: width menor que row de 1140px */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box{
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .row {
+        padding: 0 2%;
+        margin: 0 2%;
+    }
+
+    .contact-form{
+        width: 80%;
+        margin: 0 auto; /*esse auto poderia ser 20%left e 20% rigth tbm */
+        vertical-align: middle;
+    }
+
+}
+
+/* Tablet pequeno A tablet grande: de 768px a 1023px */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px; /*antes era 20. Ja que defini tudo em %, ele se adapta ao novo standard, 18 */
+    }
+    section {
+        padding: 60px 0;
+    }
+
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .logo{
+        width: 85px; /*tava definido em px no original */
+        height: auto;
+    }
+    .main-nav li{
+        font-size: 80%;
+    }
+    
+    .row{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .icon-cities{
+        font-size: 85%;
+        margin-right: 0.5px;
+    }
+
+    .city-feature{
+        font-size: 85%;
+        margin-left: 0%;
+        margin-top: 0;
+    }
+
+    blockquote {
+        padding-right: 6%;
+    }
+
+    .section-cities h3{
+        font-size: 90%;
+    }
+
+    .plan-price{
+        font-size: 250%;
+    }
+
+    .section-form form{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #android{
+        height: 130%;
+        width: auto;
+    }
+
+}
+
+
+/* Celular pequeno A tablet pequeno: de 481px a 767px */
+@media only screen and (max-width: 767px) {
+    
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+
+    .row,
+    .hero-text-box {padding: 0 4%;}
+    .col {
+        margin: 0 0 4% 0;
+        width: 100%;
+    } /* para elas ficarem uma em cima da outra, nao do ladinho */
+
+    .icon-menu{
+        display: inline-block;
+    }
+
+    .main-nav {display: none;}
+
+    .main-nav{
+        float: left;
+        margin-top: 35px;
+        margin-left: 90px;
+    }
+
+    .main-nav li{
+        display: block;
+        font-size: 95%;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0;
+        padding: 7px 0;
+        padding-right: 1%;
+        padding-left: auto;
+    }
+
+    h1 {font-size: 180%;}
+    h2 {font-size: 150%;}
+
+    .long-copy{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .steps-box:first-child {text-align: center;}
+
+    .steps-box:last-child {
+        margin-top: 30px;
+    }
+
+    .works-step div{
+        height: 25px;
+        width: 25px;
+        font-size: 90%;
+        margin-right: 15px;
+        padding: 4px;
+    }
+
+    .works-step p{ 
+        padding-bottom: 2px;
+    }
+
+    .works-step:last-of-type {margin-bottom: 30px;}
+
+
+    #android{
+        height: 52px;
+        width: auto;
+    }
+
+    .app-screen{width: 40%; margin-bottom: 10px;}
+
+    .icon-cities{
+        font-size: 100%;
+        margin-right: 2px;
+    }
+
+    .city-feature{
+        font-size: 100%;
+    }
+
+    .city-feature:last-of-type{
+        margin-top: 0px;
+    }
+
+    cite img{
+        display: none;
+    }
+
+    cite {
+        margin-bottom: 7%;
+    }
+
+
+    .section-form row{
+        margin-bottom: 10px;
+    }
+
+    input[type=submit]{
+        width: 30%;
+        margin-right: 40px;
+    }
+
+    .section-form .span-2-of-3 {
+        -webkit-transform: translateX(-1.5%);
+            -ms-transform: translateX(-1.5%);
+                transform: translateX(-1.5%);
+    }
+
+    .social-links {
+        float: none;
+    }
+
+}
+
+
+/* Celular pequeno: de 0 a 480px */
+@media only screen and (max-width: 480px) {
+
+    section {padding: 25px 0;}
+
+    .contact-form {width: 100%;}
+
+}
